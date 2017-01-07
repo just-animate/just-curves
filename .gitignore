@@ -1,0 +1,11 @@
+.alm
+.vscode
+.idea
+.vs
+npm-debug.log*
+node_modules
+dist
+src/**/*.js
+src/**/*.map
+test/**/*.js
+test/**/*.map
