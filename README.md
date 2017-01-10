@@ -1,14 +1,13 @@
-# Just Ease
+# Just Curves
 
-*Just Ease is a math library for animation and tweening!*
-
+*Just Curves is a math library for animation and tweening!*
 
 ## Features
 
-- Common easing functions like easeIn, easeOut, easeInElastic
-- Custom ease creators
+- Common easing curves like easeIn, easeOut, easeInElastic for JS and CSS
+- Create custom eases using Cubic Bezier and Step functions
 
-> Power this project up with 🌟s,  [so ^ star it please](https://github.com/just-animate/just-ease/stargazers).
+> Power this project up with 🌟s,  [so ^ star it please](https://github.com/just-animate/just-curves/stargazers).
 
 ## Getting Started
 
