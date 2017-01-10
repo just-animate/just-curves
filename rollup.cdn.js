@@ -2,9 +2,9 @@ var typescript = require('rollup-plugin-typescript');
 
 module.exports = {
     entry: './src/main.ts',
-    dest: './dist/just-ease.js',
+    dest: './dist/just-curves.js',
     format: 'iife',
-    moduleName: 'just.ease',
+    moduleName: 'just.curves',
     plugins: [
         typescript({
             "allowUnreachableCode": false,

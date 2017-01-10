@@ -1,9 +1,9 @@
 {
   "author": "Christopher Wallis <christopher.j.wallis@gmail.com> (http://notoriousb1t.com)",
   "bugs": {
-    "url": "https://github.com/just-animate/just-ease/issues"
+    "url": "https://github.com/just-animate/just-curves/issues"
   },
-  "description": "A simple ease library",
+  "description": "A simple easing library",
   "devDependencies": {
     "@types/mocha": "^2.2.34",
     "@types/node": "^6.0.53",
@@ -17,20 +17,20 @@
     "typescript": "^2.1.4",
     "uglify": "^0.1.5"
   },
-  "homepage": "https://github.com/just-animate/just-ease#readme",
+  "homepage": "https://github.com/just-animate/just-curves#readme",
   "license": "MIT",
   "main": "dist/main.js",
-  "name": "just-ease",
+  "name": "just-curves",
   "repository": {
     "type": "git",
-    "url": "https://github.com/just-animate/just-ease"
+    "url": "https://github.com/just-animate/just-curves"
   },
   "typings": "./src/main",
   "scripts": {
     "build": "npm run build:common && npm run build:cdn && npm run compress:cdn",
     "build:common": "rollup -c rollup.common.js",
     "build:cdn": "rollup -c rollup.cdn.js",
-    "compress:cdn": "uglifyjs --c --lift-vars --m --screw-ie8 --o dist/just-ease.min.js dist/just-ease.js",
+    "compress:cdn": "uglifyjs --c --lift-vars --m --screw-ie8 --o dist/just-curves.min.js dist/just-curves.js",
     "clean": "node_modules/.bin/del-cli -f dist",
     "postversion": "git push --follow-tags && npm publish",
     "preversion": "npm run rebuild",
