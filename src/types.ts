@@ -1,1 +1,1 @@
-export type EasingFunction = (x: number) => number;
+export type Curve = (x: number) => number;

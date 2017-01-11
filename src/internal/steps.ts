@@ -1,6 +1,6 @@
-import { EasingFunction } from '../types';
+import { Curve } from '../types';
 
-export const step = (count: number, pos?: number | 'end' | 'start'): EasingFunction => {
+export const steps = (count: number, pos?: number | 'end' | 'start'): Curve => {
   const q = count / 1;
   const p: number = pos === 'end'
     ? 0 : pos === 'start'

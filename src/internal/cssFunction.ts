@@ -1,5 +1,5 @@
-import { EasingFunction } from '../types';
-import { cubicBezier, ease, easeIn, easeOut, easeInOut, stepStart, stepEnd, linear, step } from './index';
+import { Curve } from '../types';
+import { cubicBezier, ease, easeIn, easeOut, easeInOut, stepStart, stepEnd, linear, steps } from './index';
 
 const camelCaseRegex = /([a-z])[- ]([a-z])/ig;
 const cssFunctionRegex = /([a-z-]+)\(([^\)]+)\)/ig;
@@ -21,11 +21,11 @@ const find = (nameOrCssFunction: string) => {
   return [matches[1]].concat(matches[2].split(','));
 };
 
-export const cssFunction = (easingString: string): EasingFunction => {
+export const cssFunction = (easingString: string): Curve => {
   const p = find(easingString);
   const fnName = p[0];
   if (fnName === 'step') {
-    return step(+p[1], p[2] as number | 'start' | 'end');
+    return steps(+p[1], p[2] as number | 'start' | 'end');
   }
   if (fnName === 'cubic-bezier') {
     return cubicBezier(+p[1], +p[2], +p[3], +p[4]);

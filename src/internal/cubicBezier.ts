@@ -1,10 +1,10 @@
 import { abs, epsilon } from './index';
-import { EasingFunction } from '../types';
+import { Curve } from '../types';
 
 const bezier = (n1: number, n2: number, t: number) =>
   3 * n1 * (1 - t) * (1 - t) * t + 3 * n2 * (1 - t) * t * t + t * t * t;
 
-export const cubicBezier = (p0: number, p1: number, p2: number, p3: number): EasingFunction => {
+export const cubicBezier = (p0: number, p1: number, p2: number, p3: number): Curve => {
   if (p0 < 0 || p0 > 1 || p2 < 0 || p2 > 1) {
     return (x: number) => x;
   }

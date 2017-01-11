@@ -1,3 +1,3 @@
-import { step } from '../internal';
+import { steps } from '../internal';
 
-export const stepEnd = step(1, 0);
+export const stepEnd = steps(1, 0);
