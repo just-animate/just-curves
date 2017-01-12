@@ -7,7 +7,7 @@
 - Common easing curves like easeIn, easeOut, easeInQuint for JS and CSS
 - Custom eases using cubicBezier(), steps(), and cssFunction()
 - Use CSS easing functions from existing code
-- Small download size: __> 6k minified__  with no dependencies
+- Small download size: __< 6k minified__  with no dependencies
 - Works with JustTween, AnimeJS, MoJS, and other animation engines that accept easings in form of ```(offset: number) => number```
 
 > Power this project up with 🌟s,  [^ star it please](https://github.com/just-animate/just-curves/stargazers).
@@ -123,7 +123,7 @@ import { /* curve name here */ } from 'just-curves';
 - stepEnd
 - stepStart
 
-## Curves read for use in CSS
+## Curves made for in CSS
 
 **Browser**
 ```ts
