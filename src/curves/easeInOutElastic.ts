@@ -1,7 +1,10 @@
-import { pow, sin, c5 } from '../internal';
+import { pow, sin, tau } from '../internal';
 
-export const easeInOutElastic = (x: number): number => x === 0
-  ? 0 : x === 1
-    ? 1 : x < 0.5
-      ? -(pow(2, 20 * x - 10) * sin((20 * x - 11.125) * c5)) / 2
-      : pow(2, -20 * x + 10) * sin((20 * x - 11.125) * c5) / 2 + 1;
+export const easeInOutElastic = (n: number) => {
+  if (!n || n === 1) return n;
+  n *= 2;
+  if (n < 1) {
+      return -0.5 * (pow(2, 10 * (n - 1)) * sin((n - 1.1) * tau / .4));
+  }
+  return pow(2, -10 * (n - 1)) * sin((n - 1.1) * tau / .4) * .5 + 1;
+};

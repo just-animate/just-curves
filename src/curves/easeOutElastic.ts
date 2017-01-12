@@ -1,6 +1,11 @@
-import { pow, sin, c4 } from '../internal';
+import { pow, tau, sin } from '../internal';
 
 
-export const easeOutElastic = (x: number): number => x === 0
-  ? 0 : x === 1
-    ? 1 : pow(2, -10 * x) * sin((x * 10 - 0.75) * c4) + 1;
+export const easeOutElastic = (n: number): number => {
+  if (!n || n === 1) return n;
+  var s, a = 0.1, p = 0.4;
+
+  if (!a || a < 1) { a = 1; s = p / 4; }
+  else s = p * Math.asin(1 / a) / tau;
+  return (a * pow(2, - 10 * n) * sin((n - s) * (tau) / p) + 1);
+};

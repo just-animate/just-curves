@@ -1,3 +1,4 @@
-import { pow, sin, c4 } from '../internal';
+import { pow, sin, tau } from '../internal';
 
-export const easeInElastic = (x: number): number => x === 0 ? 0 : x === 1 ? 1 : -pow(2, 10 * x - 10) * sin((x * 10 - 10.75) * c4);
+export const easeInElastic = (n: number): number =>
+  !n || n === 1 ? n : -1 * sin((n - 1.1) * tau * 2.5) * pow(2, 10 * (n - 1));
