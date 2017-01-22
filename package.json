@@ -26,6 +26,9 @@
     "url": "https://github.com/just-animate/just-curves"
   },
   "typings": "./src/main",
+  "typeRoots": [
+      "node_modules/@types"
+    ],
   "scripts": {
     "build": "npm run build:common && npm run build:cdn && npm run compress:cdn",
     "build:common": "rollup -c rollup.common.js",
