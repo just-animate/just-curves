@@ -2,7 +2,9 @@
 
 *Just Curves is a math library for animation and tweening!*
 
+[![npm version](https://badge.fury.io/js/just-curves.svg)](https://badge.fury.io/js/just-curves) 
 [![Build Status](https://travis-ci.org/just-animate/just-curves.svg?branch=master)](https://travis-ci.org/just-animate/just-curves)
+[![Downloads](https://img.shields.io/npm/dm/just-curves.svg)](https://www.npmjs.com/package/just-curves)
 
 ## Why use Just Curves?
 
