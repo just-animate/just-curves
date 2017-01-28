@@ -2,6 +2,8 @@
 
 *Just Curves is a math library for animation and tweening!*
 
+[![Build Status](https://travis-ci.org/just-animate/just-curves.svg?branch=master)](https://travis-ci.org/just-animate/just-curves)
+
 ## Why use Just Curves?
 
 - Common easing curves like easeIn, easeOut, easeInQuint for JS and CSS
