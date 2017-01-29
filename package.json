@@ -10,11 +10,11 @@
     "del-cli": "^0.2.1",
     "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
-    "rollup": "^0.38.0",
+    "rollup": "^0.41.4",
     "rollup-plugin-typescript": "^0.8.1",
     "ts-node": "^1.7.2",
     "tslint": "^4.2.0",
-    "typescript": "^2.1.4",
+    "typescript": "^2.2.0-dev.20170129",
     "uglify": "^0.1.5"
   },
   "jsnext:main": "./lib.es2015/main.js",
