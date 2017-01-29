@@ -5,24 +5,27 @@
         "declaration": false,
         "forceConsistentCasingInFileNames": true,
         "inlineSourceMap": false,
-        "module": "commonjs",
         "newLine": "LF",
+        "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noImplicitUseStrict": true,
-        "noUnusedLocals": true,        
+        "noUnusedLocals": true,
         "preserveConstEnums": false,
-        "removeComments": false,
+        "removeComments": true,
+        "rootDir": "src",
         "sourceMap": false,
         "strictNullChecks": true,
         "suppressImplicitAnyIndexErrors": true,
-        "target": "es6"
+        "target": "es5",
+        "outDir": "lib"
     },
     "exclude": [
         "dist",
         "lib",
         "lib.es2015",
+        "tests",
         "node_modules"
     ]
 }

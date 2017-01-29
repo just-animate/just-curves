@@ -3,7 +3,7 @@
   "bugs": {
     "url": "https://github.com/just-animate/just-curves/issues"
   },
-  "description": "A simple easing library",
+  "description": "A library of reusuable easing functions",
   "devDependencies": {
     "@types/mocha": "^2.2.34",
     "@types/node": "^6.0.53",
@@ -17,9 +17,11 @@
     "typescript": "^2.1.4",
     "uglify": "^0.1.5"
   },
+  "jsnext:main": "./lib.es2015/main.js",
   "homepage": "https://github.com/just-animate/just-curves#readme",
   "license": "MIT",
-  "main": "dist/main.js",
+  "main": "./lib/main.js",
+  "module": "./lib.es2015/main.js",
   "name": "just-curves",
   "repository": {
     "type": "git",
@@ -30,11 +32,12 @@
     "node_modules/@types"
   ],
   "scripts": {
-    "build": "npm run build:common && npm run build:cdn && npm run compress:cdn",
-    "build:common": "rollup -c rollup.common.js",
+    "build": "npm run build:node && npm run build:es2015 && npm run build:cdn && npm run compress:cdn",
+    "build:node": "tsc -p tsconfig.node.json",
+    "build:es2015": "tsc -p tsconfig.es2015.json",
     "build:cdn": "rollup -c rollup.cdn.js",
     "compress:cdn": "uglifyjs --c --lift-vars --m --screw-ie8 --o dist/just-curves.min.js dist/just-curves.js",
-    "clean": "node_modules/.bin/del-cli -f dist",
+    "clean": "node_modules/.bin/del-cli -f dist lib lib.es2015",
     "postversion": "git push --follow-tags && npm publish",
     "preversion": "npm run rebuild",
     "rebuild": "npm run clean && npm run build",

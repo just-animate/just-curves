@@ -1,5 +1,5 @@
 node_modules/
-test/
+tests/
 .alm
 .vscode
 .editorconfig
