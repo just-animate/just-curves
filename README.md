@@ -2,7 +2,7 @@
 
 *Just Curves is a math library for animation and tweening!*
 
-[![npm version](https://badge.fury.io/js/just-curves.svg)](https://badge.fury.io/js/just-curves) 
+[![npm version](https://badge.fury.io/js/just-curves.svg)](https://badge.fury.io/js/just-curves)
 [![Build Status](https://travis-ci.org/just-animate/just-curves.svg?branch=master)](https://travis-ci.org/just-animate/just-curves)
 [![Downloads](https://img.shields.io/npm/dm/just-curves.svg)](https://www.npmjs.com/package/just-curves)
 
@@ -52,6 +52,8 @@ const ease = cssFunction('cubic-bezier(0.25, 0.1, 0.25 0.1)');
 ### cubicBezier (p1, p2, p3, p4) => Curve
 Creates a cubic-bezier curve using 4 numbers
 
+Follows [cubic-bezier](https://drafts.csswg.org/css-timing/#cubic-bezier-timing-functions) CSS spec
+
 **Browser**
 ```ts
 const ease = just.curves.cubicBezier(.25, .1, .25, 1);
@@ -66,6 +68,8 @@ const ease = cubicBezier(.25, .1, .25, 1);
 
 ### steps (count, stop) => Curve
 Creates a curve that evenly steps between frames
+
+Follows [step-timing](https://drafts.csswg.org/css-timing/#step-timing-functions) CSS spec
 
 **Browser**
 ```ts
