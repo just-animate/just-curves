@@ -1,5 +1,5 @@
 const c = `cubic-bezier`;
-const s = `step`;
+const s = `steps`;
 
 export const ease = c + `(.25,.1,.25,1)`;
 export const easeIn = c + `(.42,0,1,1)`;

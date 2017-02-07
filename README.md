@@ -66,10 +66,31 @@ import { cubicBezier } from 'just-curves';
 const ease = cubicBezier(.25, .1, .25, 1);
 ```
 
+### frames (number) => Curve
+Creates a curve that divides up the animation into even steps. Accepts a number 2 or greater
+
+__(Useful for animating spritesheets.)__
+
+> Follows [frames](https://drafts.csswg.org/css-timing/#frames-timing-functions) CSS timing spec
+
+**Browser**
+```ts
+const twoFrames = just.curves.frames(2);
+const tenFrames   = just.curves.frames(10);
+```
+
+**Bundled**
+```ts
+import { frames } from 'just-curves';
+
+const twoFrames = frames(2);
+const tenFrames   = frames(10);
+```
+
 ### steps (count, stop) => Curve
 Creates a curve that advances in steps
 
-> Follows [step-timing](https://drafts.csswg.org/css-timing/#step-timing-functions) CSS spec
+> Follows [step](https://drafts.csswg.org/css-timing/#step-timing-functions) CSS timing spec
 
 **Browser**
 ```ts
