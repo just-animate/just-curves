@@ -67,7 +67,7 @@ const ease = cubicBezier(.25, .1, .25, 1);
 ```
 
 ### steps (count, stop) => Curve
-Creates a curve that evenly steps between frames
+Creates a curve that advances in steps
 
 > Follows [step-timing](https://drafts.csswg.org/css-timing/#step-timing-functions) CSS spec
 
