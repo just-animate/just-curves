@@ -69,6 +69,8 @@ const ease = cubicBezier(.25, .1, .25, 1);
 ### frames (number) => Curve
 Creates a curve that divides up the animation into even steps. Accepts a number 2 or greater
 
+[Demo on CodePen](http://codepen.io/notoriousb1t/pen/EZexMq)
+
 __(Useful for animating spritesheets.)__
 
 > Follows [frames](https://drafts.csswg.org/css-timing/#frames-timing-functions) CSS timing spec
