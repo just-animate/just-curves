@@ -76,7 +76,7 @@ __(Useful for animating spritesheets.)__
 **Browser**
 ```ts
 const twoFrames = just.curves.frames(2);
-const tenFrames   = just.curves.frames(10);
+const tenFrames = just.curves.frames(10);
 ```
 
 **Bundled**
@@ -84,7 +84,7 @@ const tenFrames   = just.curves.frames(10);
 import { frames } from 'just-curves';
 
 const twoFrames = frames(2);
-const tenFrames   = frames(10);
+const tenFrames = frames(10);
 ```
 
 ### steps (count, stop) => Curve
