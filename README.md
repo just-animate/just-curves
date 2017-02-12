@@ -32,7 +32,7 @@ npm install just-curves --save
 
 ## Curve creators
 
-### cssFunction (easingString) => Curve
+### CSS Function
 Creates a curve from a css easing function
 
 **Browser**
@@ -49,7 +49,7 @@ const linear = cssFunction('linear');
 const ease = cssFunction('cubic-bezier(0.25, 0.1, 0.25 0.1)');
 ```
 
-### cubicBezier (p1, p2, p3, p4) => Curve
+### Cubic Bezier
 Creates a cubic-bezier curve using 4 numbers
 
 > Follows [cubic-bezier](https://drafts.csswg.org/css-timing/#cubic-bezier-timing-functions) CSS spec
@@ -66,7 +66,7 @@ import { cubicBezier } from 'just-curves';
 const ease = cubicBezier(.25, .1, .25, 1);
 ```
 
-### frames (number) => Curve
+### Frames
 Creates a curve that divides up the animation into even steps. Accepts a number 2 or greater
 
 [Demo on CodePen](http://codepen.io/notoriousb1t/pen/EZexMq)
@@ -89,7 +89,7 @@ const twoFrames = frames(2);
 const tenFrames = frames(10);
 ```
 
-### steps (count, stop) => Curve
+### Steps
 Creates a curve that advances in steps
 
 > Follows [step](https://drafts.csswg.org/css-timing/#step-timing-functions) CSS timing spec
