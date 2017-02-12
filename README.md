@@ -119,40 +119,23 @@ just.curves./* curve name here */
 ```ts
 import { /* curve name here */ } from 'just-curves';
 ```
+The chart below shows all of the easings ready for use in JavaScript as is except for `linear`.
 
-- easeInBack
-- easeInBounce
-- easeInCirc
-- easeInCubic
-- easeInElastic
-- easeInExpo
-- easeInOutBack
-- easeInOutBounce
-- easeInOutCirc
-- easeInOutCubic
-- easeInOutElastic
-- easeInOutExpo
-- easeInOutQuad
-- easeInOutQuart
-- easeInOutQuint
-- easeInOutSine
-- easeInQuad
-- easeInQuart
-- easeInQuint
-- easeInSine
-- easeOutBack
-- easeOutBounce
-- easeOutCirc
-- easeOutCubic
-- easeOutElastic
-- easeOutExpo
-- easeOutQuad
-- easeOutQuart
-- easeOutQuint
-- easeOutSine
-- linear
-- stepEnd
-- stepStart
+
+Type | In | Out | In-Out
+--- | --- | --- | ---
+`back` | easeInBack | easeOutBack | easeInOutBack
+`bounce` | easeInBounce | easeOutBounce | easeInOutBounce
+`circ` | easeInCirc | easeOutCirc | easeInOutCirc
+`cubic` | easeInCubic | easeOutCubic | easeInOutCubic
+`elastic` | easeInElastic | easeOutElastic | easeInOutElastic
+`expo` | easeInExpo | easeOutExpo | easeInOutExpo
+`quad` | easeInQuad | easeOutQuad | easeInOutQuad
+`quart` | easeInQuart | easeOutQuart | easeInOutQuart
+`quint` | easeInQuint | easeOutQuint | easeInOutQuint
+`sine` | easeInSine | easeOutSine | easeInOutSine
+`step` | stepStart | stepEnd |
+
 
 ## Curves made for in CSS
 
@@ -168,35 +151,20 @@ import { css } from 'just-curves';
 const curve = css./* curve name here */;
 ```
 
-- ease
-- easeIn
-- easeInBack
-- easeInCirc
-- easeInCubic
-- easeInExpo
-- easeInOut
-- easeInOutBack
-- easeInOutCirc
-- easeInOutCubic
-- easeInOutExpo
-- easeInOutQuad
-- easeInOutQuart
-- easeInOutQuint
-- easeInOutSine
-- easeInQuad
-- easeInQuart
-- easeInQuint
-- easeInSine
-- easeOut
-- easeOutBack
-- easeOutCirc
-- easeOutCubic
-- easeOutExpo
-- easeOutQuad
-- easeOutQuart
-- easeOutQuint
-- easeOutSine
-- elegantSlowStartEnd
-- linear
-- stepEnd
-- stepStart
+The chart below shows all of the easings ready for use in CSS as is except for `linear`.
+
+Type | In | Out | In-Out
+--- | --- | --- | ---
+`back` | easeInBack | easeOutBack | easeInOutBack
+`bounce` | easeInBounce | easeOutBounce | easeInOutBounce
+`circ` | easeInCirc | easeOutCirc | easeInOutCirc
+`cubic` | easeInCubic | easeOutCubic | easeInOutCubic
+`ease` | easeIn | easeOut | easeInOut
+`expo` | easeInExpo | easeOutExpo | easeInOutExpo
+`quad` | easeInQuad | easeOutQuad | easeInOutQuad
+`quart` | easeInQuart | easeOutQuart | easeInOutQuart
+`quint` | easeInQuint | easeOutQuint | easeInOutQuint
+`sine` | easeInSine | easeOutSine | easeInOutSine
+`special` | | | elegantSlowStartEnd
+`step` | stepStart | stepEnd |
+
