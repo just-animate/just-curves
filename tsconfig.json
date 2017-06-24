@@ -24,6 +24,7 @@
         "dist",
         "lib",
         "lib.es2015",
-        "node_modules"
+        "node_modules",
+        "types"
     ]
 }

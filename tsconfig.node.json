@@ -2,7 +2,8 @@
     "compilerOptions": {
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
-        "declaration": false,
+        "declaration": true,
+        "declarationDir": "types",
         "forceConsistentCasingInFileNames": true,
         "inlineSourceMap": false,
         "module": "commonjs",
@@ -27,6 +28,7 @@
         "lib",
         "lib.es2015",
         "tests",
-        "node_modules"
+        "node_modules",
+        "types"
     ]
 }

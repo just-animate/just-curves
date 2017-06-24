@@ -26,7 +26,8 @@
     "type": "git",
     "url": "https://github.com/just-animate/just-curves"
   },
-  "typings": "./src/main",
+  "types": "./types/main",
+  "typings": "./types/main",
   "typeRoots": [
     "node_modules/@types"
   ],
