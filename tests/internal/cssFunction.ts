@@ -2,25 +2,6 @@ import { cssFunction } from '../../src/internal';
 import * as assert from 'assert';
 
 describe('cssFunction', () => {
-    describe('frames(2)', () => {
-        it('0 is 0', () => {
-            const twoStep = cssFunction('frames(2)');
-            assert.equal(twoStep(0), 0);
-        });
-        it('.4 is 1', () => {
-            const twoStep = cssFunction('frames(2)');
-            assert.equal(twoStep(.4), 0);
-        });
-        it('.5 is 1', () => {
-            const twoStep = cssFunction('frames(2)');
-            assert.equal(twoStep(.5), 1);
-        });
-        it('1 is 1', () => {
-            const twoStep = cssFunction('frames(2)');
-            assert.equal(twoStep(1), 1);
-        });
-    });
-
     describe('steps(1, start)', () => {
         it('0 is 1', () => {
             const stepStart = cssFunction('steps(1,start)');
