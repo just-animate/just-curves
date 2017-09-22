@@ -11,8 +11,8 @@
 - Common easing curves like easeIn, easeOut, easeInQuint for JS and CSS
 - Custom eases using cubicBezier(), steps(), and cssFunction()
 - Use CSS easing functions from existing code
-- Small download size: __< 6k minified__  with no dependencies
-- Works with JustTween, AnimeJS, MoJS, and other animation engines that accept easings in form of ```(offset: number) => number```
+- Small download size: __< 5k minified__  with no dependencies
+- Works with Popmotion, AnimeJS, MoJS, and other animation engines that accept easings in form of ```(offset: number) => number```
 
 > Power this project up with 🌟s,  [^ star it please](https://github.com/just-animate/just-curves/stargazers).
 
@@ -64,29 +64,6 @@ const ease = just.curves.cubicBezier(.25, .1, .25, 1);
 import { cubicBezier } from 'just-curves';
 
 const ease = cubicBezier(.25, .1, .25, 1);
-```
-
-### Frames
-Creates a curve that divides up the animation into even steps. Accepts a number 2 or greater
-
-[Demo on CodePen](http://codepen.io/notoriousb1t/pen/EZexMq)
-
-__(Useful for animating spritesheets.)__
-
-> Follows [frames](https://drafts.csswg.org/css-timing/#frames-timing-functions) CSS timing spec
-
-**Browser**
-```ts
-const twoFrames = just.curves.frames(2);
-const tenFrames = just.curves.frames(10);
-```
-
-**Bundled**
-```ts
-import { frames } from 'just-curves';
-
-const twoFrames = frames(2);
-const tenFrames = frames(10);
 ```
 
 ### Steps
