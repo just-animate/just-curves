@@ -12,7 +12,7 @@
 - Custom eases using cubicBezier(), steps(), and cssFunction()
 - Use CSS easing functions from existing code
 - Small download size: __< 5k minified__  with no dependencies
-- Works with Just Animate, TweenRex, Popmotion, AnimeJS, MoJS, and other animation engines that accept easings in form of ```(offset: number) => number```
+- Works with [Just Animate](https://github.com/just-animate/just-animate), [TweenRex](https://github.com/tweenrex/tweenrex), [nm8](https://github.com/davidkpiano/nm8), [Popmotion](https://github.com/Popmotion/popmotion), [AnimeJS](https://github.com/juliangarnier/anime), [MoJS](https://github.com/legomushroom/mojs), and other animation engines that accept easings in form of ```(offset: number) => number```
 
 > Power this project up with 🌟s,  [^ star it please](https://github.com/just-animate/just-curves/stargazers).
 
