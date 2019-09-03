@@ -8,7 +8,7 @@
     "@types/mocha": "^2.2.43",
     "@types/node": "^8.0.29",
     "del-cli": "^1.1.0",
-    "mocha": "^3.5.3",
+    "mocha": "^6.2.0",
     "rollup": "^0.50.0",
     "rollup-plugin-typescript": "^0.8.1",
     "ts-node": "^3.3.0",
